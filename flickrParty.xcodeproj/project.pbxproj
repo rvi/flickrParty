@@ -12,17 +12,17 @@
 		AD32DB941778E12300809F7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD32DB931778E12300809F7D /* CoreGraphics.framework */; };
 		AD32DB9A1778E12300809F7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD32DB981778E12300809F7D /* InfoPlist.strings */; };
 		AD32DB9C1778E12300809F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DB9B1778E12300809F7D /* main.m */; };
-		AD32DBA01778E12300809F7D /* RVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DB9F1778E12300809F7D /* RVAppDelegate.m */; };
 		AD32DBA21778E12300809F7D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBA11778E12300809F7D /* Default.png */; };
 		AD32DBA41778E12300809F7D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBA31778E12300809F7D /* Default@2x.png */; };
 		AD32DBA61778E12300809F7D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBA51778E12300809F7D /* Default-568h@2x.png */; };
-		AD32DBA91778E12300809F7D /* RVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBA81778E12300809F7D /* RVViewController.m */; };
-		AD32DBAC1778E12300809F7D /* RVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBAA1778E12300809F7D /* RVViewController.xib */; };
 		AD32DBB41778E12300809F7D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD32DBB31778E12300809F7D /* SenTestingKit.framework */; };
 		AD32DBB51778E12300809F7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD32DB8F1778E12300809F7D /* UIKit.framework */; };
 		AD32DBB61778E12300809F7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD32DB911778E12300809F7D /* Foundation.framework */; };
 		AD32DBBE1778E12300809F7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBBC1778E12300809F7D /* InfoPlist.strings */; };
 		AD32DBC11778E12300809F7D /* flickrPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBC01778E12300809F7D /* flickrPartyTests.m */; };
+		AD32DBCF1778E2F700809F7D /* RVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */; };
+		AD32DBD71778E3A400809F7D /* RVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBD51778E3A400809F7D /* RVViewController.m */; };
+		AD32DBD81778E3A400809F7D /* RVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBD61778E3A400809F7D /* RVViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,20 +44,20 @@
 		AD32DB991778E12300809F7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD32DB9B1778E12300809F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD32DB9D1778E12300809F7D /* flickrParty-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flickrParty-Prefix.pch"; sourceTree = "<group>"; };
-		AD32DB9E1778E12300809F7D /* RVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVAppDelegate.h; sourceTree = "<group>"; };
-		AD32DB9F1778E12300809F7D /* RVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RVAppDelegate.m; sourceTree = "<group>"; };
 		AD32DBA11778E12300809F7D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AD32DBA31778E12300809F7D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AD32DBA51778E12300809F7D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AD32DBA71778E12300809F7D /* RVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVViewController.h; sourceTree = "<group>"; };
-		AD32DBA81778E12300809F7D /* RVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RVViewController.m; sourceTree = "<group>"; };
-		AD32DBAB1778E12300809F7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RVViewController.xib; sourceTree = "<group>"; };
 		AD32DBB21778E12300809F7D /* flickrPartyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flickrPartyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD32DBB31778E12300809F7D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AD32DBBB1778E12300809F7D /* flickrPartyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "flickrPartyTests-Info.plist"; sourceTree = "<group>"; };
 		AD32DBBD1778E12300809F7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD32DBBF1778E12300809F7D /* flickrPartyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flickrPartyTests.h; sourceTree = "<group>"; };
 		AD32DBC01778E12300809F7D /* flickrPartyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flickrPartyTests.m; sourceTree = "<group>"; };
+		AD32DBCC1778E2F700809F7D /* RVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVAppDelegate.h; sourceTree = "<group>"; };
+		AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAppDelegate.m; sourceTree = "<group>"; };
+		AD32DBD41778E3A400809F7D /* RVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVViewController.h; sourceTree = "<group>"; };
+		AD32DBD51778E3A400809F7D /* RVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVViewController.m; sourceTree = "<group>"; };
+		AD32DBD61778E3A400809F7D /* RVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +117,7 @@
 		AD32DB951778E12300809F7D /* flickrParty */ = {
 			isa = PBXGroup;
 			children = (
-				AD32DB9E1778E12300809F7D /* RVAppDelegate.h */,
-				AD32DB9F1778E12300809F7D /* RVAppDelegate.m */,
-				AD32DBA71778E12300809F7D /* RVViewController.h */,
-				AD32DBA81778E12300809F7D /* RVViewController.m */,
-				AD32DBAA1778E12300809F7D /* RVViewController.xib */,
+				AD32DBCA1778E2A800809F7D /* Classes */,
 				AD32DB961778E12300809F7D /* Supporting Files */,
 			);
 			path = flickrParty;
@@ -158,6 +154,26 @@
 				AD32DBBC1778E12300809F7D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD32DBCA1778E2A800809F7D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD32DBCC1778E2F700809F7D /* RVAppDelegate.h */,
+				AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */,
+				AD32DBD31778E36F00809F7D /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AD32DBD31778E36F00809F7D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD32DBD41778E3A400809F7D /* RVViewController.h */,
+				AD32DBD51778E3A400809F7D /* RVViewController.m */,
+				AD32DBD61778E3A400809F7D /* RVViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +252,7 @@
 				AD32DBA21778E12300809F7D /* Default.png in Resources */,
 				AD32DBA41778E12300809F7D /* Default@2x.png in Resources */,
 				AD32DBA61778E12300809F7D /* Default-568h@2x.png in Resources */,
-				AD32DBAC1778E12300809F7D /* RVViewController.xib in Resources */,
+				AD32DBD81778E3A400809F7D /* RVViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD32DB9C1778E12300809F7D /* main.m in Sources */,
-				AD32DBA01778E12300809F7D /* RVAppDelegate.m in Sources */,
-				AD32DBA91778E12300809F7D /* RVViewController.m in Sources */,
+				AD32DBCF1778E2F700809F7D /* RVAppDelegate.m in Sources */,
+				AD32DBD71778E3A400809F7D /* RVViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +318,6 @@
 				AD32DB991778E12300809F7D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AD32DBAA1778E12300809F7D /* RVViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD32DBAB1778E12300809F7D /* en */,
-			);
-			name = RVViewController.xib;
 			sourceTree = "<group>";
 		};
 		AD32DBBC1778E12300809F7D /* InfoPlist.strings */ = {
