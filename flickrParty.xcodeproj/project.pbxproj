@@ -26,6 +26,7 @@
 		AD3D4F801778E5A000FDA3BE /* RVPhotoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4F7F1778E5A000FDA3BE /* RVPhotoAPI.m */; };
 		AD6855DE177A02FB005CD278 /* RVPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6855DD177A02FB005CD278 /* RVPhoto.m */; };
 		AD6855E0177A0629005CD278 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6855DF177A0629005CD278 /* Storyboard.storyboard */; };
+		AD68562B177A0C18005CD278 /* RVPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68562A177A0C18005CD278 /* RVPhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		AD6855DC177A02FB005CD278 /* RVPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPhoto.h; sourceTree = "<group>"; };
 		AD6855DD177A02FB005CD278 /* RVPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPhoto.m; sourceTree = "<group>"; };
 		AD6855DF177A0629005CD278 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		AD685629177A0C18005CD278 /* RVPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPhotoCell.h; sourceTree = "<group>"; };
+		AD68562A177A0C18005CD278 /* RVPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPhotoCell.m; sourceTree = "<group>"; };
 		D7239CD385E547568E1FB847 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220B34E120B45D594CD2709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -174,6 +177,7 @@
 			children = (
 				AD32DBCC1778E2F700809F7D /* RVAppDelegate.h */,
 				AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */,
+				AD685628177A0BF9005CD278 /* Views */,
 				AD6855DB177A02DA005CD278 /* Model */,
 				AD3D4F7D1778E55100FDA3BE /* API */,
 				AD32DBD31778E36F00809F7D /* Controllers */,
@@ -208,6 +212,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AD685628177A0BF9005CD278 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD685629177A0C18005CD278 /* RVPhotoCell.h */,
+				AD68562A177A0C18005CD278 /* RVPhotoCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +233,7 @@
 				AD32DB891778E12300809F7D /* Frameworks */,
 				AD32DB8A1778E12300809F7D /* Resources */,
 				023637F3A371471C9C3A4B4B /* Copy Pods Resources */,
+				ADB69C88177A0E2A009CE73E /* Todo & Fixme */,
 			);
 			buildRules = (
 			);
@@ -342,6 +356,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		ADB69C88177A0E2A009CE73E /* Todo & Fixme */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Todo & Fixme";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -354,6 +382,7 @@
 				AD32DBD71778E3A400809F7D /* RVViewController.m in Sources */,
 				AD3D4F801778E5A000FDA3BE /* RVPhotoAPI.m in Sources */,
 				AD6855DE177A02FB005CD278 /* RVPhoto.m in Sources */,
+				AD68562B177A0C18005CD278 /* RVPhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

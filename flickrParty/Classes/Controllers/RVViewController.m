@@ -11,9 +11,11 @@
 // API
 #import "RVPhotoAPI.h"
 
-
 // Model
 #import "RVPhoto.h"
+
+// View
+#import "RVPhotoCell.h"
 
 @interface RVViewController ()
 
@@ -27,6 +29,9 @@
 @end
 
 @implementation RVViewController
+
+/**************************************************************************************************/
+#pragma mark - View Management
 
 - (void)viewDidLoad
 {
@@ -57,10 +62,16 @@
     return self.photos.count;
 }
 
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [collectionView dequeueReusableCellWithReuseIdentifier:@"photoCellID" forIndexPath:indexPath];
+    RVPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photoCellID" forIndexPath:indexPath];
+    
+    if (indexPath.row < self.photos.count)
+    {
+        RVPhoto *photo = [self.photos objectAtIndex:indexPath.row];
+        [cell updateUIWithPhoto:photo];
+    }
+    return cell;
 }
 
 
