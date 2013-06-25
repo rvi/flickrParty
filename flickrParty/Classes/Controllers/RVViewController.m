@@ -8,6 +8,9 @@
 
 #import "RVViewController.h"
 
+// API
+#import "RVPhotoAPI.h"
+
 @interface RVViewController ()
 
 @end
@@ -17,7 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [RVPhotoAPI getPhotosTaggedPartySucceded:^(NSArray *photos) {
+        
+    } failed:^(NSError *error) {
+        DLog(@"failure in getting photo : %@",error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
