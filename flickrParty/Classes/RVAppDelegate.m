@@ -10,10 +10,15 @@
 
 #import "RVViewController.h"
 
+// API
+#import "AFNetworking.h"
+
 @implementation RVAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    
     return YES;
 }
 

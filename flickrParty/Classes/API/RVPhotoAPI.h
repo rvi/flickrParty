@@ -11,7 +11,9 @@
 @interface RVPhotoAPI : NSObject
 
 
-+ (void)getPhotosTaggedPartySucceded:(void (^) (NSArray *photos))success
-                              failed:(void (^) (NSError *error))failure;
++ (void)getPhotosTaggedPartyPage:(NSUInteger)page
+            numberOfItemsPerPage:(NSUInteger)numberOfItems
+                        Succeded:(void (^) (NSArray *photos))success
+                          failed:(void (^) (NSError *error))failure;
 
 @end

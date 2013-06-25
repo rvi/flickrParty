@@ -27,6 +27,8 @@
 #define JSON @"json"
 #define EXTRAS_KEY @"extras"
 #define URL_KEY @"url_n"
+#define PER_PAGE_KEY @"per_page"
+#define PAGE_KEY @"page"
 
 #define PHOTOS_KEY @"photos"
 #define PHOTO_KEY @"photo"
@@ -35,9 +37,12 @@
 
 @implementation RVPhotoAPI
 
-+ (void)getPhotosTaggedPartySucceded:(void (^) (NSArray *photos))success
-                              failed:(void (^) (NSError *error))failure
++ (void)getPhotosTaggedPartyPage:(NSUInteger)page
+            numberOfItemsPerPage:(NSUInteger)numberOfItems
+                        Succeded:(void (^) (NSArray *photos))success
+                          failed:(void (^) (NSError *error))failure
 {
+    // TODO: make a singleton of AFHTTPClient in order to not reallocate at each call
     NSURL *url = [NSURL URLWithString:@"http://api.flickr.com/"];
     AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:url];
     
@@ -46,8 +51,10 @@
                              NO_JSON_CALLBACK_KEY: @1,
                              TAGS_KEY: PARTY_KEY,
                              EXTRAS_KEY: URL_KEY,
-                             FORMAT_KEY: JSON};
-    
+                             FORMAT_KEY: JSON,
+                             PER_PAGE_KEY: [NSNumber numberWithUnsignedInteger:numberOfItems],
+                             PAGE_KEY: [NSNumber numberWithUnsignedInteger:page]};
+        
     [client getPath:PATH_KEY
          parameters:params
             success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -68,9 +75,7 @@
                         [parsedPhotos addObject:photo];
                     }
                 }
-                
-                DLog(@"result : %@", parsedPhotos);
-                
+                                
                 if (success)
                 {
                     success([NSArray arrayWithArray:parsedPhotos]);

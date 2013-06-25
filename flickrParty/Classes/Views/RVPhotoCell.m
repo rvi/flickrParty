@@ -10,13 +10,6 @@
 
 #import "AFNetworking.h"
 
-@interface RVPhotoCell ()
-
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
-@end
-
-
 @implementation RVPhotoCell
 
 /**************************************************************************************************/
@@ -24,7 +17,7 @@
 
 - (void)updateUIWithPhoto:(RVPhoto *)photo
 {
-    // TODO: add cache on photo
+    // TODO: add cache on photo (can be done with NSURLCache)
     NSURL *url = [NSURL URLWithString:photo.url];
     [self.imageView setImageWithURL:url];
 }

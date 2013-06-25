@@ -27,6 +27,7 @@
 		AD6855DE177A02FB005CD278 /* RVPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6855DD177A02FB005CD278 /* RVPhoto.m */; };
 		AD6855E0177A0629005CD278 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6855DF177A0629005CD278 /* Storyboard.storyboard */; };
 		AD68562B177A0C18005CD278 /* RVPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68562A177A0C18005CD278 /* RVPhotoCell.m */; };
+		ADB69C8E177A2846009CE73E /* UIImage+crop.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB69C8D177A2846009CE73E /* UIImage+crop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		AD6855DF177A0629005CD278 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		AD685629177A0C18005CD278 /* RVPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPhotoCell.h; sourceTree = "<group>"; };
 		AD68562A177A0C18005CD278 /* RVPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPhotoCell.m; sourceTree = "<group>"; };
+		ADB69C8C177A2846009CE73E /* UIImage+crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+crop.h"; sourceTree = "<group>"; };
+		ADB69C8D177A2846009CE73E /* UIImage+crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+crop.m"; sourceTree = "<group>"; };
 		D7239CD385E547568E1FB847 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220B34E120B45D594CD2709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -175,6 +178,7 @@
 		AD32DBCA1778E2A800809F7D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ADB69C8B177A2827009CE73E /* Utils */,
 				AD32DBCC1778E2F700809F7D /* RVAppDelegate.h */,
 				AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */,
 				AD685628177A0BF9005CD278 /* Views */,
@@ -219,6 +223,15 @@
 				AD68562A177A0C18005CD278 /* RVPhotoCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ADB69C8B177A2827009CE73E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ADB69C8C177A2846009CE73E /* UIImage+crop.h */,
+				ADB69C8D177A2846009CE73E /* UIImage+crop.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +396,7 @@
 				AD3D4F801778E5A000FDA3BE /* RVPhotoAPI.m in Sources */,
 				AD6855DE177A02FB005CD278 /* RVPhoto.m in Sources */,
 				AD68562B177A0C18005CD278 /* RVPhotoCell.m in Sources */,
+				ADB69C8E177A2846009CE73E /* UIImage+crop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

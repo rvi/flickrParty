@@ -14,6 +14,11 @@
 @interface RVPhotoCell : UICollectionViewCell
 
 /**************************************************************************************************/
+#pragma mark - Getters & Setters
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+/**************************************************************************************************/
 #pragma mark - UI
 
 - (void)updateUIWithPhoto:(RVPhoto *)photo;
