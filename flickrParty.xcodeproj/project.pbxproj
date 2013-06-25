@@ -26,6 +26,7 @@
 		AD32DBD81778E3A400809F7D /* RVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBD61778E3A400809F7D /* RVViewController.xib */; };
 		AD3D4F801778E5A000FDA3BE /* RVPhotoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4F7F1778E5A000FDA3BE /* RVPhotoAPI.m */; };
 		AD6855DE177A02FB005CD278 /* RVPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6855DD177A02FB005CD278 /* RVPhoto.m */; };
+		AD6855E0177A0629005CD278 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6855DF177A0629005CD278 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		AD3D4F7F1778E5A000FDA3BE /* RVPhotoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPhotoAPI.m; sourceTree = "<group>"; };
 		AD6855DC177A02FB005CD278 /* RVPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPhoto.h; sourceTree = "<group>"; };
 		AD6855DD177A02FB005CD278 /* RVPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPhoto.m; sourceTree = "<group>"; };
+		AD6855DF177A0629005CD278 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D7239CD385E547568E1FB847 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220B34E120B45D594CD2709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 		AD32DB951778E12300809F7D /* flickrParty */ = {
 			isa = PBXGroup;
 			children = (
+				AD6855DF177A0629005CD278 /* Storyboard.storyboard */,
 				AD32DBCA1778E2A800809F7D /* Classes */,
 				AD32DB961778E12300809F7D /* Supporting Files */,
 			);
@@ -287,6 +290,7 @@
 				AD32DBA41778E12300809F7D /* Default@2x.png in Resources */,
 				AD32DBA61778E12300809F7D /* Default-568h@2x.png in Resources */,
 				AD32DBD81778E3A400809F7D /* RVViewController.xib in Resources */,
+				AD6855E0177A0629005CD278 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
