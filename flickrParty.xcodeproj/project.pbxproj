@@ -23,7 +23,6 @@
 		AD32DBC11778E12300809F7D /* flickrPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBC01778E12300809F7D /* flickrPartyTests.m */; };
 		AD32DBCF1778E2F700809F7D /* RVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */; };
 		AD32DBD71778E3A400809F7D /* RVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD32DBD51778E3A400809F7D /* RVViewController.m */; };
-		AD32DBD81778E3A400809F7D /* RVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD32DBD61778E3A400809F7D /* RVViewController.xib */; };
 		AD3D4F801778E5A000FDA3BE /* RVPhotoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3D4F7F1778E5A000FDA3BE /* RVPhotoAPI.m */; };
 		AD6855DE177A02FB005CD278 /* RVPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6855DD177A02FB005CD278 /* RVPhoto.m */; };
 		AD6855E0177A0629005CD278 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6855DF177A0629005CD278 /* Storyboard.storyboard */; };
@@ -61,7 +60,6 @@
 		AD32DBCD1778E2F700809F7D /* RVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVAppDelegate.m; sourceTree = "<group>"; };
 		AD32DBD41778E3A400809F7D /* RVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVViewController.h; sourceTree = "<group>"; };
 		AD32DBD51778E3A400809F7D /* RVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVViewController.m; sourceTree = "<group>"; };
-		AD32DBD61778E3A400809F7D /* RVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVViewController.xib; sourceTree = "<group>"; };
 		AD3D4F7E1778E5A000FDA3BE /* RVPhotoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPhotoAPI.h; sourceTree = "<group>"; };
 		AD3D4F7F1778E5A000FDA3BE /* RVPhotoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVPhotoAPI.m; sourceTree = "<group>"; };
 		AD6855DC177A02FB005CD278 /* RVPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVPhoto.h; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 			children = (
 				AD32DBD41778E3A400809F7D /* RVViewController.h */,
 				AD32DBD51778E3A400809F7D /* RVViewController.m */,
-				AD32DBD61778E3A400809F7D /* RVViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				AD32DBA21778E12300809F7D /* Default.png in Resources */,
 				AD32DBA41778E12300809F7D /* Default@2x.png in Resources */,
 				AD32DBA61778E12300809F7D /* Default-568h@2x.png in Resources */,
-				AD32DBD81778E3A400809F7D /* RVViewController.xib in Resources */,
 				AD6855E0177A0629005CD278 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
